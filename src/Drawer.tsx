@@ -16,7 +16,7 @@ function Drawer() {
     dispatch(setShowDrawer(false));
   };
 
-  useClickOutside(drawerRef, () => handleClose, showDrawer);
+  useClickOutside(drawerRef, () => handleClose(), showDrawer);
 
   useEffect(() => {
     if (showDrawer) {
